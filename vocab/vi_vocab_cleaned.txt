@@ -1,6 +1,6 @@
 [PAD]
 [UNK]
-[START]    
+[START]
 [END]
 và
 của
