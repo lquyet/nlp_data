@@ -29,6 +29,8 @@ def clean_file(file, ignore):
             continue
 
         cleaned_i = preprocessor.run(raw[i])
+        cleaned_i = ''.join([i for i in cleaned_i if not i.isdigit()])
+        
         if len(cleaned_i) == 0 or cleaned_i == "\n":
             ignore.add(i)
             continue
